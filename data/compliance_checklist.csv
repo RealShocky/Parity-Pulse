@@ -1,0 +1,10 @@
+rule,status,implementation
+Public Team USA data only for Team USA facts,compliant,"Uses official Team USA, USOPC, and Census public aggregate references; no private data."
+Team USA scope only,compliant,Files contain only U.S./Team USA Olympic and Paralympic aggregate data.
+No athlete NIL,compliant,"No athlete names, images, profile URLs, bios, or likenesses included."
+No IOC branding,compliant,"Files include no IOC marks, rings, logos, or protected assets."
+No finish times,compliant,No time fields included.
+No specific scoring results,compliant,No score or points fields included.
+Medals and placement allowed,compliant,Includes sport-level medal counts only. Placement schema prepared but not populated where not sourced.
+Aggregate-only Gemini input,recommended,"Pass only these aggregate files to Gemini, not raw roster rows."
+No mock data,compliant for included files,Included files are sourced from public references and include provenance. Missing full roster-level rows are intentionally not fabricated.

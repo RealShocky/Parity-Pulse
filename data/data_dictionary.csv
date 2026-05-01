@@ -1,0 +1,19 @@
+field,description
+program_type,Olympic or Paralympic
+year,Competition year
+sport,Sport or sport-category label from public source
+gold,Aggregate gold medal count
+silver,Aggregate silver medal count
+bronze,Aggregate bronze medal count
+total,Aggregate medal total
+source_name,Public source label
+source_url,Public source URL
+last_verified,Date dataset package was assembled/verified
+nil_safe,Indicates no NIL fields are present
+notes,Caveats and use limitations
+metric_type,Type of hometown/location metric
+place_name,"Aggregate place name, state or city"
+state,Two-letter state abbreviation where city metric uses one
+count,Aggregate count
+rate_per_million,Per-capita rate where publicly sourced
+noaa_rcc_region,NOAA Regional Climate Center region label

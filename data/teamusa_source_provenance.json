@@ -1,0 +1,117 @@
+{
+  "package_name": "Parity Pulse Team USA Public Aggregate Dataset",
+  "generated_on": "2026-04-30",
+  "nil_safe_mode": true,
+  "includes_athlete_names": false,
+  "includes_athlete_images_or_likenesses": false,
+  "includes_finish_times": false,
+  "includes_scores_or_points": false,
+  "sources": [
+    {
+      "source_name": "Team USA Paris 2024 Olympic Medals",
+      "source_url": "https://www.teamusa.com/paris-2024/olympics/medals",
+      "used_for": [
+        "Olympic medal totals by sport",
+        "Olympic program medal total"
+      ],
+      "fields_used": [
+        "sport",
+        "gold",
+        "silver",
+        "bronze",
+        "total"
+      ],
+      "fields_removed": [
+        "athlete names",
+        "event details",
+        "finish times",
+        "scores",
+        "images/likenesses"
+      ]
+    },
+    {
+      "source_name": "Team USA Paris 2024 Paralympic Medals",
+      "source_url": "https://www.teamusa.com/paris-2024/paralympics/medals",
+      "used_for": [
+        "Paralympic medal totals by sport",
+        "Paralympic program medal total"
+      ],
+      "fields_used": [
+        "sport",
+        "gold",
+        "silver",
+        "bronze",
+        "total"
+      ],
+      "fields_removed": [
+        "athlete names",
+        "event details",
+        "finish times",
+        "scores",
+        "images/likenesses"
+      ]
+    },
+    {
+      "source_name": "U.S. Census Hometown Heroes article",
+      "source_url": "https://www.census.gov/library/stories/2024/07/2024-olympic-team.html",
+      "used_for": [
+        "Olympic roster snapshot",
+        "Olympic top states",
+        "Olympic top cities",
+        "Olympic per-capita highlights"
+      ],
+      "fields_used": [
+        "aggregate counts",
+        "aggregate rates",
+        "source notes"
+      ],
+      "fields_removed": [
+        "athlete names in narrative examples"
+      ]
+    },
+    {
+      "source_name": "USOPC Olympic Team announcement",
+      "source_url": "https://www.usopc.org/news/2024/july/10/u-s-olympic-paralympic-committee-names-594-member-2024-u-s-olympic-team",
+      "used_for": [
+        "Olympic roster aggregate stats"
+      ],
+      "fields_used": [
+        "aggregate counts only"
+      ],
+      "fields_removed": [
+        "athlete names in narrative examples"
+      ]
+    },
+    {
+      "source_name": "USOPC Paralympic Team announcement",
+      "source_url": "https://www.usopc.org/news/2024/august/19/united-states-olympic-paralympic-committee-reveals-225-member-2024-u-s-paralympic-team",
+      "used_for": [
+        "Paralympic roster aggregate stats",
+        "Paralympic top states"
+      ],
+      "fields_used": [
+        "aggregate counts only"
+      ],
+      "fields_removed": [
+        "athlete names in narrative examples"
+      ]
+    },
+    {
+      "source_name": "NOAA NCEI Regional Climate Centers",
+      "source_url": "https://www.ncei.noaa.gov/index.php/regional/regional-climate-centers",
+      "used_for": [
+        "state to NOAA climate region mapping"
+      ],
+      "fields_used": [
+        "state",
+        "region"
+      ],
+      "fields_removed": []
+    }
+  ],
+  "important_caveats": [
+    "Roster counts differ between public snapshots because rosters changed before/during the Games. Files preserve source-specific snapshot names rather than forcing one value.",
+    "This package contains aggregate data suitable for a hackathon demo. It intentionally avoids raw athlete rows to reduce NIL risk.",
+    "If the app needs full hometown aggregation, use the included browser extractor on official TeamUSA pages and export only sanitized aggregate data."
+  ]
+}
